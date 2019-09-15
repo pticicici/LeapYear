@@ -1,0 +1,16 @@
+﻿@model GetDateViewModel
+@{
+    ViewData["Title"] = "Date data";
+}
+
+<div id="centerEverything" style="">
+<form  method="post">
+    <label for="year" class="customStyle">Year</label><br/>
+    <input id="year" type="text" asp-for="year" class="customStyle"/><br/>
+    <label for="month" class="customStyle">Month</label><br/>
+    <input id="month" type="text" asp-for="month" class="customStyle"/><br/><br/>
+    <input type="submit" value="Get result" class="customStyle">
+</form>
+<br/>
+<h1 value="">@Html.DisplayFor(model=> model.result)</h1>
+</div>
